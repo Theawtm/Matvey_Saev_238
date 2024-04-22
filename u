@@ -1,4 +1,4 @@
-bash#!/bin/bash
+#!/bin/bash
 
 input_dir=$1
 output_dir=$2
@@ -6,7 +6,7 @@ output_dir=$2
 remove_files() {
     local file_path=$1
     local file_name=$(basename "$file_path")
-    
+
     if [ -f "$output_dir/$file_name" ]; then
         new_file_name="${file_name}_$(date '+%s')"
         cp "$file_path" "$output_dir/$new_file_name"
@@ -17,17 +17,18 @@ remove_files() {
 
 for file in "$input_dir"/*; do
     if [ -f "$file" ]; then
-        copy_files "$file"
+        remove_files "$file"
     fi
 done
 
 remove_recursive() {
     for source in "$1"/*; do
         if [ -d "$source" ]; then
-            copy_recursive "$source"
+            remove_recursive "$source"
         elif [ -f "$source" ]; then
-            copy_files "$source"
+            remove_files "$source"
         fi
     done
+}
 
 remove_recursive "$input_dir"
