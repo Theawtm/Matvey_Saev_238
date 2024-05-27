@@ -9,3 +9,14 @@
 5. ***Система доставки***: управление курьерами, распределение заказов, отслеживание местоположения курьеров и заказов.
 
 Далее будут представлены диаграммы, описывающие процессы взаимодействия этих компонентов в рамках разрабатываемой системы.
+
+### Диаграмма вариантов использования
+>![plot_sum](https://github.com/Theawtm/Matvey_Saev_238/blob/main/use_cases.jpg)
+### Диаграмма последовательности
+>![plot_sum](https://github.com/Theawtm/Matvey_Saev_238/blob/main/sequence.jpg)
+### Диаграмма состояний
+>![plot_sum](https://github.com/Theawtm/Matvey_Saev_238/blob/main/state.jpg)
+### Диаграмма деятельности
+>![plot_sum](https://github.com/Theawtm/Matvey_Saev_238/blob/main/activity2.jpg)
+### Диаграмма классов
+>![plot_sum](https://github.com/Theawtm/Matvey_Saev_238/blob/main/classes.jpg)
